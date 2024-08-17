@@ -1,0 +1,9 @@
+// https://github.com/microsoft/vscode-remote-release/issues/4268
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
+{
+    "name": "DB dev-container",
+    "dockerComposeFile": ["../docker-compose.yaml"],
+    "service": "db",
+    "shutdownAction": "stopCompose",
+    "workspaceFolder": "/workspace"
+}

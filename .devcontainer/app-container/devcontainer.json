@@ -1,0 +1,23 @@
+// Documentation for consultation
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// To VsCode: https://code.visualstudio.com/docs/devcontainers/tutorial
+// https://github.com/microsoft/vscode-remote-release/issues/4268
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
+{
+    "name": "App dev-container",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "app",
+    "shutdownAction": "stopCompose",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+		"vscode": {
+			"settings": {},
+			"extensions": [
+				"firsttris.vscode-jest-runner",
+				"ms-vscode.makefile-tools",
+				"humao.rest-client",
+				"zxh404.vscode-proto3"
+			]
+		}
+	}
+}
